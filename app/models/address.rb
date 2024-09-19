@@ -7,5 +7,5 @@ class Address < ApplicationRecord
     def is_available?
         Time.now >= created_at
       end
-          
+        
 end
