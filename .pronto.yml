@@ -1,4 +1,12 @@
+rubocop:
+  exclude:
+    - 'vendor/**'
+
+flay:
+  exclude:
+    - 'vendor/**'
+
 all:
   exclude:
-    - 'vendor/**' # Exclude the vendor directory
+    - 'vendor/**'
 base: main
