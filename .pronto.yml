@@ -1,0 +1,12 @@
+rubocop:
+  exclude:
+    - 'vendor/**'
+
+flay:
+  exclude:
+    - 'vendor/**'
+
+all:
+  exclude:
+    - 'vendor/**'
+base: main
