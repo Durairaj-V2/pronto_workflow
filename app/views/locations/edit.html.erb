@@ -1,0 +1,12 @@
+<%= stylesheet_link_tag 'location_edit', media: 'all' %>
+<h1>Editing location</h1>
+
+<div style="border:2px solid; width:500px; padding-left:30px">
+<%= render "form", location: @location %>
+</div>
+<br>
+
+<div>
+  <%= link_to "Show this location", @location %> |
+  <%= link_to "Back to locations", locations_path %>
+</div>

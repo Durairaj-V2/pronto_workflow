@@ -1,0 +1,5 @@
+<% if(@form == 'profile') %>
+  <%= render "edit-form", admin: @admin %>
+<% elsif(@form == 'password') %>
+  <%= render "edit-pass-form", admin: @admin %>
+<% end %>
