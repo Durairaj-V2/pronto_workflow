@@ -16,14 +16,14 @@ jobs:
       - name: Print GitHub Token
         run: echo $GITHUB_ACCESS_TOKEN
         env:
-          GITHUB_ACCESS_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_ACCESS_TOKEN: ${{ secrets.MY_GITHUB_PAT }}
         
       - name: Verify GitHub Token
         run: |
           curl -H "Authorization: token $GITHUB_ACCESS_TOKEN" https://api.github.com/user
         env:
-          GITHUB_ACCESS_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          
+          GITHUB_ACCESS_TOKEN: ${{ secrets.MY_GITHUB_PAT }}
+
       # Step 1: Checkout the repository
       - name: Checkout repository
         uses: actions/checkout@v3
