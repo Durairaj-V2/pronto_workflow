@@ -9,9 +9,15 @@ jobs:
 
     runs-on: ubuntu-latest
     permissions:
-      contents: write
+      contents: read
+      statuses: write
 
     steps:
+      - name: Print GitHub Token
+        run: echo $GITHUB_ACCESS_TOKEN
+        env:
+          GITHUB_ACCESS_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          
       # Step 1: Checkout the repository
       - name: Checkout repository
         uses: actions/checkout@v3
