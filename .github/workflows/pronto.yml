@@ -8,9 +8,6 @@ jobs:
   pronto:
 
     runs-on: ubuntu-latest
-    permissions:
-      contents: read
-      statuses: write
 
     steps:
       - name: Print GitHub Token
